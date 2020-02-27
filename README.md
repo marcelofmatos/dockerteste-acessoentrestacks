@@ -1,3 +1,8 @@
+# objetivo
+
+Este é um exemplo de acesso entre duas stacks diferentes, onde os serviços em `meuprojeto2` consomem serviço existente na stack `meuprojeto1`
+
+
 # comandos
 
 ```
