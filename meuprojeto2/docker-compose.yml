@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  ping:
+    image: willfarrell/ping
+    environment:
+      HOSTNAME: "nomedoservico1"
+      TIMEOUT: 10
+    networks:
+      - default
+      - netprojeto1
+
+  testeacesso:
+    image: curlimages/curl:7.68.0 
+    command: -L -v http://nomedoservico1:5050/test/1
+    networks:
+      - default
+      - netprojeto1
+
+networks:
+  netprojeto1:
+    external:
+      name: meuprojeto1_default

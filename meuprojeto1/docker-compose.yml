@@ -1,0 +1,6 @@
+version: '3'
+
+services:
+  nomedoservico1: 
+    image: vad1mo/hello-world-rest
+            
